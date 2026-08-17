@@ -104,37 +104,3 @@ ML_Assignment2_2025AD05083/
     └── preprocessor.pkl
 ```
 
-## Git commit plan
-
-Use multiple meaningful commits rather than one large commit:
-
-```bash
-git init
-git add README.md requirements.txt .gitignore
-git commit -m "docs: add project README and requirements"
-
-git add main.py
-git commit -m "feat: convert notebook workflow to Python"
-
-git add train_models.py
-git commit -m "feat: add reproducible model training pipeline"
-
-git add app.py
-git commit -m "feat: add Streamlit churn prediction app"
-
-git add test_data.csv model_results.csv models/
-git commit -m "chore: add test data and trained model artifacts"
-
-git status
-git log --oneline
-```
-
-Then connect the GitHub repository and push:
-
-```bash
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
-
-**Do not commit secrets, API keys, passwords, or `.env` files.**
